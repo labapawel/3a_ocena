@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-4 mt-3" *ngFor="let ocena of oceny">
+        <input type="button" value="" [ngClass]="{
+            'btn-primary': ocena.class=='primary',
+            'btn-success': ocena.class=='success',
+            'btn-danger': ocena.class=='danger',
+            'btn-warning': ocena.class=='warning',
+            'btn-info': ocena.class=='info',
+            'btn-light': ocena.class=='light',
+            'btn-dark': ocena.class=='dark',
+            'btn-secondary': ocena.class=='secondary',
+
+        }"  class="btn w-100" 
+            [value]="ocena.ocenaStr" />
+    </div>
+</div>
